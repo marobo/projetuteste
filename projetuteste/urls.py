@@ -21,4 +21,5 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('appteste.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
